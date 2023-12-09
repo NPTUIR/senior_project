@@ -241,7 +241,7 @@ class CGAN():
 if __name__ == '__main__':
     cgan = CGAN()
     start = time.time()
-    cgan.train(epochs=30000, batch_size=2, sample_interval=200)
+    cgan.train(epochs=30000, batch_size=64, sample_interval=200)
     end = time.time()
     print(end-start)
     cgan.predict(training=False)
